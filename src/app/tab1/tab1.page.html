@@ -1,17 +1,66 @@
-<ion-header [translucent]="true">
+
+
+<div class="checkout">
+
   <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+    <ion-searchbar class="search" (ionInput)="filterinitializlistmat($event)"></ion-searchbar>
   </ion-toolbar>
-</ion-header>
+  <ion-content>
+    <div class="">
+    <ion-list *ngIf="LISTMat" >
+      <ion-item (click)="selectVal(item.CUNO)"  *ngFor ="let item of LISTMat">
+        {{item.RFIA}}
+         </ion-item>
+    </ion-list>
+  </div>
+  </ion-content>
+  <form class="form" autocomplete="off" novalidate>
+    <fieldset>
+      <label for="card-holder">Nom et Prénom</label>
+      <input type="text" id="card-holder" [value]="CUNM" />
+    </fieldset>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    
+    <fieldset>
+      <label for="card-holder">Adresse</label>
+      <input type="text" id="card-holder" [value]="CUA3"/>
+    </fieldset>
+    <fieldset>
+      <label for="card-holder">N° Chassis</label>
+      <input type="text" id="card-holder"  [value]="SERN"/>
+    </fieldset>
+    <fieldset>
+      <label for="card-holder">Réceptionnaire</label>
+      <input type="text" id="card-holder" />
+    </fieldset>
+    
+    <fieldset class="fieldset-expiration">
+      <label for="card-expiration-month">Modèle</label>
+      <input type="num" id="card-number" class="input-cart-number" maxlength="20"[value]="ITNO" />
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
-</ion-content>
+    </fieldset>
+    <fieldset class="fieldset-ccvTEL">
+      <label for="card-ccv">TEL</label>
+      <input type="num" id="card-number" class="input-cart-number" maxlength="20"[value]="PHNO" />
+    </fieldset>
+    
+   
+    <fieldset >
+      <label for="card-number">Date de premier mise en circulation</label>
+      <input type="num" id="card-number" class="input-cart-number" maxlength="20" />
+    </fieldset>
+    
+    <fieldset class="fieldset-ccvKM">
+      <label for="card-ccv">Kilométrage</label>
+      <input type="num" id="card-number" class="input-cart-number" maxlength="20" />
+    </fieldset>
+    
+    
+    
+    <fieldset class="fieldset-ccvOB">
+      <label for="card-holder">Obsérvation</label>
+      <input type="text" id="card-holder" cols="50" rows="10" maxlength="500"/>
+    </fieldset>
+    <ion-button expand="block" fill="outline" (click) ="authentifcate()">Ajouter</ion-button>
+  </form>
+</div>

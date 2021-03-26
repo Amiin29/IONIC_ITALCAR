@@ -1,17 +1,772 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<body>
+  <ion-header translucent>
+      <ion-toolbar>
+        <ion-title>Contrôle Qualité Réparation</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="main-content">
+    <ion-list>
+      <fieldset>
+        <label for="card-holder">Tous Travaux</label>
+      </fieldset>
+        <ion-item>
+          <ion-label>
+            <h2> Présence des éléments de protection</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            Bon 
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+            Mauvais
+            </label>
+          </div>
+  
+        </ion-item>
+        
+        <ion-item>
+          <ion-label>
+            <h2>Essai</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+            Fait
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+            Non fait
+            </label>
+          </div>
+        </ion-item>
+        <fieldset>
+          <label for="card-holder">Entretien Periodique(Sur Le dossier)</label>
+        </fieldset>
+        <ion-item>
+          <ion-label>
+            <h2>La gamme a été correctement choisie </h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h2>L'ensemble des opérations concernées a été coché <br>sur la gamme,le reste est barré</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <fieldset>
+          <label for="card-holder">Autre Travaux (Sur le véhicule)</label>
+        </fieldset>
+        <ion-item>
+          <ion-label>
+            <h2>Tous les points signalés par le client ont été traités</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h2>Les travaux ont été correctement réalisés et les <br>accessoires remontés et restés</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <fieldset>
+          <label for="card-holder">Présentation de contrôle : Statique </label>
+         </fieldset>
+         <fieldset>
+          <label for="card-holder">Niveau</label>
+        
+        </fieldset>
+         <ion-item>
+          <ion-label>
+            <h2>Huile moteur</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h2>Liquide de frein</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h2>Huile boite</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h2>Liquide de refroidissement</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h2>Liquide de direction</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h2>Etanchétie freins</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h2>Liquide lave-glace(+efficacité EG)</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h2>Batterie(+serrage des cosses)</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <fieldset>
+          <label for="card-holder">CONTROLE</label>
+        
+        </fieldset>
+        <ion-item>
+          <ion-label>
+            <h2>Liquide lave-glace(+efficacité EG)</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h2>Lecture des mémoires défauts</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <fieldset>
+          <label for="card-holder">Fonctionnement</label>
+        </fieldset>
+        <ion-item>
+          <ion-label>
+            <h2>Feux de position</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h2>Feux de croissement-Feux de route</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h2>Clignotants</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h2>Feux de stop</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h2>Feux de recule-Eclaireur de plaque</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h2>Anti-brouillard AV / AR</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h2>Voyants de sécurité(indicateur de bord)</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h2>Montre de bord (+mise à l'heure)</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <fieldset>
+          <label for="card-holder">CONTROLE</label>
+        </fieldset>
+        <ion-item>
+          <ion-label>
+            <h2>Hauteur de pédale d'embrayage</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h2>Course et efficacité frein à main</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h2>Etat + pression pneux (yc roue de secours)</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h2>Propreté du véhicule intérieur-exterieur</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+    <fieldset>
+          <label for="card-holder">Présentation de contrôle:Dynamique Essai sur route</label>
+        
+        </fieldset>
+        <fieldset>
+          <label for="card-holder">CONTROLE</label>
+        
+        </fieldset>
+        <ion-item>
+          <ion-label>
+            <h2>Passage des vitesses AV/AR</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h2>Température moteur + motoventilateur</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h2>Tenue cap en ligne droite</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h2>Tenue cap au freinage</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <fieldset>
+          <label for="card-holder">Présentation de contrôle:Sur le pont</label>
+        </fieldset>
+        <fieldset>
+          <label for="card-holder">CONTROLE</label>
+        </fieldset>
+        <ion-item>
+          <ion-label>
+            <h2>Etat des soufflets de direction</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h2>Etat des soufflets des rotules</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h2>Etat des soufflets de transmissions </h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h2>Etanchétie du moteur</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h2>Etanchétie de la boite de vitesses </h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h2>Etanchétie freins</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h2>Etanchétie circuit de refroidissement</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h2>Etanchétie circuit hydraulique</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h2>Etanchétie direction assistée</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+        <ion-item>
+          <ion-label>
+            <h2>Etanchétie amortisseurs</h2>
+          </ion-label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             Bon
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+            <label class="form-check-label" for="flexCheckChecked">
+              Mauvais
+            </label>
+          </div>
+        </ion-item>
+      </ion-list>
+          <ion-infinite-scroll-content style="min-height: 167px;">
+        
+            <ion-button expand="block" fill="outline">Ajouter</ion-button>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
-</ion-content>
+</ion-infinite-scroll-content>
+            
+      </ion-content>

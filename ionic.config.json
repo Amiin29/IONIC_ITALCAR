@@ -1,5 +1,12 @@
 {
   "name": "IonicItalcarSAV",
-  "integrations": {},
-  "type": "angular"
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "proxies": [
+    {
+      "proxyUrl": "http://srv-iso.italcar.intra:21007/m3api-rest/execute/CRS610MI/LstByNumber"
+    }
+  ]
 }
