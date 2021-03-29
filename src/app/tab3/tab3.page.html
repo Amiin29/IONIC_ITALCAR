@@ -13,36 +13,26 @@
           <ion-label>
             <h2> Présence des éléments de protection</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-            Bon 
-            </label>
+          <div *ngFor="let item of Presence" >
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox"  id="Presence" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-            Mauvais
-            </label>
-          </div>
-  
         </ion-item>
-        
         <ion-item>
           <ion-label>
             <h2>Essai</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-            Fait
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-            Non fait
-            </label>
+          <div *ngFor="let item of Essai" >
+            <div class="form-check">
+              <input checked class="form-check-input" type="checkbox"  id="Essai" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <fieldset>
@@ -52,34 +42,26 @@
           <ion-label>
             <h2>La gamme a été correctement choisie </h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of gamme" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="gamme" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <ion-item>
           <ion-label>
             <h2>L'ensemble des opérations concernées a été coché <br>sur la gamme,le reste est barré</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of operations" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="opérations" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <fieldset>
@@ -89,34 +71,26 @@
           <ion-label>
             <h2>Tous les points signalés par le client ont été traités</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of points" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="flexCheckDefault" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <ion-item>
           <ion-label>
             <h2>Les travaux ont été correctement réalisés et les <br>accessoires remontés et restés</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of travaux" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="travaux" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <fieldset>
@@ -124,142 +98,109 @@
          </fieldset>
          <fieldset>
           <label for="card-holder">Niveau</label>
-        
         </fieldset>
          <ion-item>
           <ion-label>
             <h2>Huile moteur</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of Huilemoteur" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="Huilemoteur" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <ion-item>
           <ion-label>
             <h2>Liquide de frein</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of Liquidefrein" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="Liquide" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <ion-item>
           <ion-label>
             <h2>Huile boite</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of Huileboite" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="Huileboite" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <ion-item>
           <ion-label>
             <h2>Liquide de refroidissement</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of Liquiderefroidissement" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="Liquiderefroidissement" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <ion-item>
           <ion-label>
             <h2>Liquide de direction</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of Liquidedirection" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="Liquiderefroidissement" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <ion-item>
           <ion-label>
             <h2>Etanchétie freins</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of Etanchetie" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="Etanchetie" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <ion-item>
           <ion-label>
             <h2>Liquide lave-glace(+efficacité EG)</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of Liquidelaveglace" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="Liquidelaveglace" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <ion-item>
           <ion-label>
             <h2>Batterie(+serrage des cosses)</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of Batterie" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="Batterie" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <fieldset>
@@ -270,34 +211,26 @@
           <ion-label>
             <h2>Liquide lave-glace(+efficacité EG)</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of Liquidelave" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="Liquidelave" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <ion-item>
           <ion-label>
             <h2>Lecture des mémoires défauts</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of Lecturememoires" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="Lecturememoires" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <fieldset>
@@ -307,136 +240,104 @@
           <ion-label>
             <h2>Feux de position</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of Feuxposition" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="Feuxposition" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <ion-item>
           <ion-label>
             <h2>Feux de croissement-Feux de route</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of Feuxcroissement" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="Feuxcroissement" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <ion-item>
           <ion-label>
             <h2>Clignotants</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of Clignotants" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="Clignotants" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <ion-item>
           <ion-label>
             <h2>Feux de stop</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of FeuxStop" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="FeuxStop" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <ion-item>
           <ion-label>
             <h2>Feux de recule-Eclaireur de plaque</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of FeuxReculeEclaireur" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="FeuxReculeEclaireur" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <ion-item>
           <ion-label>
             <h2>Anti-brouillard AV / AR</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of Antibrouillard" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="Antibrouillard" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <ion-item>
           <ion-label>
             <h2>Voyants de sécurité(indicateur de bord)</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of VoyantsSecurite" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="VoyantsSecurite" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <ion-item>
           <ion-label>
             <h2>Montre de bord (+mise à l'heure)</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of MontreBord" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="MontreBord" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <fieldset>
@@ -446,68 +347,52 @@
           <ion-label>
             <h2>Hauteur de pédale d'embrayage</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of HauteurPedale" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="HauteurPedale" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <ion-item>
           <ion-label>
             <h2>Course et efficacité frein à main</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of CourseFrein" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="CourseFrein" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <ion-item>
           <ion-label>
             <h2>Etat + pression pneux (yc roue de secours)</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of pressionPneux" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="pressionPneux" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <ion-item>
           <ion-label>
             <h2>Propreté du véhicule intérieur-exterieur</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of PropreteVehicule" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="PropreteVehicule" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
     <fieldset>
@@ -522,68 +407,52 @@
           <ion-label>
             <h2>Passage des vitesses AV/AR</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of PassageVitesses" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="PassageVitesses" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <ion-item>
           <ion-label>
             <h2>Température moteur + motoventilateur</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of TemperatureMoteur" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="TemperatureMoteur" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <ion-item>
           <ion-label>
             <h2>Tenue cap en ligne droite</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of TenueLigne" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="TenueLigne" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <ion-item>
           <ion-label>
             <h2>Tenue cap au freinage</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of TenueFreinage" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="TenueFreinage" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <fieldset>
@@ -596,177 +465,131 @@
           <ion-label>
             <h2>Etat des soufflets de direction</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of EtatSouffletsdirection" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="EtatSouffletsdirection" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <ion-item>
           <ion-label>
             <h2>Etat des soufflets des rotules</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of EtatSouffletsrotules" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="EtatSouffletsrotules" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <ion-item>
           <ion-label>
             <h2>Etat des soufflets de transmissions </h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of EtatSouffletstransmissions" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="EtatSouffletstransmissions" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <ion-item>
           <ion-label>
             <h2>Etanchétie du moteur</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of Etanchetiemoteur" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="Etanchetiemoteur" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <ion-item>
           <ion-label>
             <h2>Etanchétie de la boite de vitesses </h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of Etanchetieboite" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="Etanchetieboite" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <ion-item>
           <ion-label>
             <h2>Etanchétie freins</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of Etanchetiefreins" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="Etanchetiefreins" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <ion-item>
           <ion-label>
             <h2>Etanchétie circuit de refroidissement</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of Etanchetierefroidissement" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="Etanchetierefroidissement" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <ion-item>
           <ion-label>
             <h2>Etanchétie circuit hydraulique</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of Etanchetiecircuit" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="Etanchetiecircuit" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <ion-item>
           <ion-label>
             <h2>Etanchétie direction assistée</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of Etanchetiedirection" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="Etanchetiedirection" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
         <ion-item>
           <ion-label>
             <h2>Etanchétie amortisseurs</h2>
           </ion-label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-             Bon
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-            <label class="form-check-label" for="flexCheckChecked">
-              Mauvais
-            </label>
+          <div *ngFor="let item of Etanchetieamortisseurs" >
+            <div class="form-check">
+              <input  class="form-check-input" type="checkbox"  id="Etanchetieamortisseurs" name="{{item.name}}" (change)="onchange()" [(ngModel)]="item.isselected">
+              <label class="form-check-label" for="flexCheckDefault">
+              {{item.name}} 
+              </label>
+            </div>
           </div>
         </ion-item>
       </ion-list>
-          <ion-infinite-scroll-content style="min-height: 167px;">
-        
-            <ion-button expand="block" fill="outline">Ajouter</ion-button>
-
-</ion-infinite-scroll-content>
-            
-      </ion-content>
+<ion-infinite-scroll-content style="min-height: 167px;"><ion-button expand="block" fill="outline" (click)="ajout()">Ajouter</ion-button></ion-infinite-scroll-content></ion-content>

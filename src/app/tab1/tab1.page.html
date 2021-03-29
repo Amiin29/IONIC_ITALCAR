@@ -5,29 +5,26 @@
   <ion-toolbar>
     <ion-searchbar class="search" (ionInput)="filterinitializlistmat($event)"></ion-searchbar>
   </ion-toolbar>
-  <ion-content>
-    <div class="">
-    <ion-list *ngIf="LISTMat" >
+
+    <div class="autocomplete" *ngIf="LISTMat">
       <ion-item (click)="selectVal(item.CUNO)"  *ngFor ="let item of LISTMat">
         {{item.RFIA}}
          </ion-item>
-    </ion-list>
-  </div>
-  </ion-content>
+  </div>  <ion-content></ion-content>
   <form class="form" autocomplete="off" novalidate>
     <fieldset>
       <label for="card-holder">Nom et Prénom</label>
-      <input type="text" id="card-holder" [value]="CUNM" />
+      <input disabled type="text" id="card-holder" [value]="CUNM" />
     </fieldset>
 
     
     <fieldset>
       <label for="card-holder">Adresse</label>
-      <input type="text" id="card-holder" [value]="CUA3"/>
+      <input disabled type="text" id="card-holder" [value]="CUA3"/>
     </fieldset>
     <fieldset>
       <label for="card-holder">N° Chassis</label>
-      <input type="text" id="card-holder"  [value]="SERN"/>
+      <input disabled type="text" id="card-holder"  [value]="SERN"/>
     </fieldset>
     <fieldset>
       <label for="card-holder">Réceptionnaire</label>
@@ -36,12 +33,12 @@
     
     <fieldset class="fieldset-expiration">
       <label for="card-expiration-month">Modèle</label>
-      <input type="num" id="card-number" class="input-cart-number" maxlength="20"[value]="ITNO" />
+      <input disabled type="num" id="card-number" class="input-cart-number" maxlength="20"[value]="ITNO" />
 
     </fieldset>
     <fieldset class="fieldset-ccvTEL">
       <label for="card-ccv">TEL</label>
-      <input type="num" id="card-number" class="input-cart-number" maxlength="20"[value]="PHNO" />
+      <input disabled type="num" id="card-number" class="input-cart-number" maxlength="20"[value]="PHNO" />
     </fieldset>
     
    

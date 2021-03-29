@@ -11,6 +11,17 @@ body {
 body {
   background: linear-gradient(50deg, #f3c680, hsla(179,54%,76%,1));
 }
+.autocomplete {
+  width: 86%;
+  height: max-content;
+  background: white;
+  position: absolute;
+  box-shadow: 0 0 1px black;
+  left: 7%;
+  top: 7p;
+  z-index: 99999;
+  padding: 0.3rem;
+}
 .recherche{
     top: -8rem;;
 }
