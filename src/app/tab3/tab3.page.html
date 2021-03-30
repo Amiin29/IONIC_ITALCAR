@@ -592,4 +592,9 @@
           </div>
         </ion-item>
       </ion-list>
-<ion-infinite-scroll-content style="min-height: 167px;"><ion-button expand="block" fill="outline" (click)="ajout()">Ajouter</ion-button></ion-infinite-scroll-content></ion-content>
+<ion-infinite-scroll-content style="min-height: 167px;">
+  <ion-button (click)="ajout()" color="secondary" >
+    <ion-icon  slot="start"></ion-icon>
+    Ajouter
+  </ion-button>
+ </ion-infinite-scroll-content></ion-content>

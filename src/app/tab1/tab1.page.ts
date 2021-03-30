@@ -118,7 +118,7 @@ someString:any
         console.log( this.MatBasicData[0]['CUNO'])
      })
      this.MatBasicData = []; //vider le t bleau 
-
+     
      
   }
  
