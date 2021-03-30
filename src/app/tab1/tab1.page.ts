@@ -13,16 +13,21 @@ export class Tab1Page  implements OnInit{
 MatBasicData: any[] = [];
 Mat: any[] = [];
 LISTMat:  any[]  ;
-PHNO:any
-ITNO:any
-CUNM:any
-CUA1:any
-CUA3:any
-SERN:any
+PHNO=""
+ITNO=""
+CUNM=""
+CUA1=""
+CUA3=""
+SERN=""
 test = false;
 someString:any
-  constructor(public authService: ProviderService) {}
 
+  constructor(public authService: ProviderService) {}
+  /* <input  class="form-check-input" type="checkbox" name="a" [(ngModel)]="isa" (change)="onchange($event)">
+      <input  class="form-check-input" type="checkbox" name="b" [(ngModel)]="isb" (change)="onchange($event)"> */
+//onchange(e){
+ // if(this.isa && e.target.name==a){
+    //this.isb=false}else{this.isa=false}}
  
   ngOnInit() {
     
@@ -113,7 +118,7 @@ someString:any
         console.log( this.MatBasicData[0]['CUNO'])
      })
      this.MatBasicData = []; //vider le t bleau 
-
+     
      
   }
  
