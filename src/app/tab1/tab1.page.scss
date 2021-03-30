@@ -6,11 +6,12 @@
 html,
 body {
   min-height: 100%;
-  font-family: 'Open sans', sans-serif;
+  font-family: "Open sans", sans-serif;
 }
 body {
-  background: linear-gradient(50deg, #f3c680, hsla(179,54%,76%,1));
+  background: linear-gradient(50deg, #f3c680, hsla(179, 54%, 76%, 1));
 }
+
 .autocomplete {
   width: 86%;
   height: max-content;
@@ -24,6 +25,10 @@ body {
 }
 .recherche{
     top: -8rem;;
+=======
+.recherche {
+  top: -8rem;
+
 }
 
 /*--------------------
@@ -40,15 +45,15 @@ Buttons
   position: relative;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    transition: all .2s ease-in-out;
-    box-shadow: inset 0 3px 0 hsla(0, 0, 0, 0), 0 3px 3px hsla(0, 0, 0, .2);
+    transition: all 0.2s ease-in-out;
+    box-shadow: inset 0 3px 0 hsla(0, 0, 0, 0), 0 3px 3px hsla(0, 0, 0, 0.2);
     border-radius: 5px;
   }
 
@@ -56,25 +61,24 @@ Buttons
     background: hsla(0, 0, 0, 0.1);
     box-shadow: inset 0 3px 0 hsla(0, 0, 0, 0.2);
   }
-
 }
 
 /*--------------------
 Form
 --------------------*/
-.input{width: 270px;
-        margin-right: 12px;
-        float: left;}
+.input {
+  width: 270px;
+  margin-right: 12px;
+  float: left;
+}
 .form {
-
   fieldset {
     border: none;
     padding: 0;
     padding: 10px 0;
     position: relative;
     clear: both;
-    top: -42rem; 
-
+    top: -42rem;
 
     &.fieldset-expiration {
       float: left;
@@ -82,58 +86,53 @@ Form
 
       & .select {
         width: 201px;
-                margin-right: 12px;
+        margin-right: 12px;
         float: left;
       }
     }
     &.fieldset-ccv {
-        clear: none;
-        float: right;
-        width: 236px;
-      }
+      clear: none;
+      float: right;
+      width: 236px;
+    }
     &.fieldset-ccvTEL {
       clear: none;
       float: right;
-  width: 203px;
+      width: 203px;
     }
     &.fieldset-ccvKM {
       top: -52rem;
-            clear: none;
+      clear: none;
       float: right;
       width: 203px;
       top: -47rem;
     }
     &.fieldset-ccvKO {
-        top: -10rem;
+      top: -10rem;
       clear: none;
       float: right;
       width: 236px;
     }
     &.fieldset-ccvKO {
-        top: -10rem;
+      top: -10rem;
       clear: none;
       float: right;
       width: 236px;
     }
-    &.fieldset-ccvOB{
+    &.fieldset-ccvOB {
       top: -47rem;
-
-  }
+    }
     &.fieldset-min {
       clear: none;
       float: right;
       width: 236px;
     }
- 
- 
-
-
 
     label {
       display: block;
       text-transform: uppercase;
       font-size: 11px;
-      color: hsla(0, 0, 0, .6);
+      color: hsla(0, 0, 0, 0.6);
       margin-bottom: 5px;
       font-weight: bold;
       font-family: sans-serif;
@@ -147,7 +146,7 @@ Form
       padding: 10px;
       border-radius: 5px;
       font-size: 15px;
-      outline: none!important;
+      outline: none !important;
       border: 1px solid hsla(0, 0, 0, 0.3);
       box-shadow: inset 0 1px 4px hsla(0, 0, 0, 0.2);
 
@@ -160,7 +159,7 @@ Form
           margin-right: 0;
         }
       }
-      &.input-cart-numbermin{
+      &.input-cart-numbermin {
         width: 200px;
         display: inline-block;
         margin-right: 8px;
@@ -173,7 +172,7 @@ Form
     .select {
       position: relative;
       &::after {
-        content: '';
+        content: "";
         border-top: 8px solid #222;
         border-left: 4px solid transparent;
         border-right: 4px solid transparent;
@@ -190,7 +189,7 @@ Form
         padding: 0;
         border: none;
         width: 100%;
-        outline: none!important;
+        outline: none !important;
         top: 6px;
         left: 6px;
         background: none;
@@ -199,16 +198,13 @@ Form
           color: transparent;
           text-shadow: 0 0 0 #000;
         }
-
       }
     }
-
-
   }
 
   button {
     width: 100%;
-    outline: none!important;
+    outline: none !important;
     background: linear-gradient(180deg, #49a09b, #3d8291);
     text-transform: uppercase;
     font-weight: bold;
@@ -221,7 +217,6 @@ Form
       margin-right: 6px;
     }
   }
-
 }
 
 /*--------------------
@@ -270,15 +265,16 @@ Credit Card
     box-shadow: 0 1px 6px hsla(0, 0, 0, 0.3);
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       width: 100%;
       height: 100%;
       top: 0;
       left: 0;
-      background: url('http://cdn.flaticon.com/svg/44/44386.svg') no-repeat center;
+      background: url("http://cdn.flaticon.com/svg/44/44386.svg") no-repeat
+        center;
       background-size: cover;
-      opacity: .05;
+      opacity: 0.05;
     }
   }
 
@@ -312,7 +308,6 @@ Credit Card
     .logo {
       top: 185px;
     }
-
   }
 
   .chip {
@@ -321,18 +316,23 @@ Credit Card
     height: 45px;
     top: 20px;
     left: 20px;
-    background: linear-gradient(135deg, hsl(269,54%,87%) 0%,hsl(200,64%,89%) 44%,hsl(18,55%,94%) 100%);;
+    background: linear-gradient(
+      135deg,
+      hsl(269, 54%, 87%) 0%,
+      hsl(200, 64%, 89%) 44%,
+      hsl(18, 55%, 94%) 100%
+    );
     border-radius: 8px;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       bottom: 0;
       left: 0;
       right: 0;
       margin: auto;
-      border: 4px solid hsla(0, 0, 50, .1);
+      border: 4px solid hsla(0, 0, 50, 0.1);
       width: 80%;
       height: 70%;
       border-radius: 5px;
@@ -401,10 +401,7 @@ Credit Card
       color: #fff;
     }
   }
-
-
 }
-
 
 .the-most {
   position: fixed;
@@ -414,7 +411,7 @@ Credit Card
   width: 50vw;
   max-width: 200px;
   padding: 10px;
-  
+
   img {
     max-width: 100%;
   }
@@ -427,4 +424,15 @@ Credit Card
 
 .example-full-width {
   width: 100%;
+}
+.autocomplete {
+  width: 86%;
+  height: max-content;
+  background: white;
+  position: absolute;
+  box-shadow: 0 0 1px black;
+  left: 7%;
+  top: 64px;
+  z-index: 99999;
+  padding: 0.3rem;
 }
