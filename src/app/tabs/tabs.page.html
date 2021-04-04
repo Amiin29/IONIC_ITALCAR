@@ -1,3 +1,22 @@
+
+<ion-slide-box slide-tabs-scrollable="false"  show-pager="false" ion-slide-tabs>
+  <ion-slide ion-slide-tab-label="First">
+      <ion-nav-view name="tab1"></ion-nav-view>
+   </ion-slide>
+  <ion-slide ion-slide-tab-label="Second">
+      <ion-nav-view name="tab2"></ion-nav-view>
+   </ion-slide>
+</ion-slide-box>
+
+<script id="tab1.html" type="text/ng-template">
+<ion-view view-title="Tab1">
+  <ion-content class="padding">
+    <p>
+     My content
+    </p>
+  </ion-content>
+</ion-view>
+</script>
 <ion-tabs>
 
   <ion-tab-bar slot="bottom">
